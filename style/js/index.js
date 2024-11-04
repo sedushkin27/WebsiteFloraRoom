@@ -99,3 +99,33 @@ if (forgotPasswordLink) {
         e.preventDefault();
     })
 }
+
+const buttonOrderFilter = document.querySelector('.button-order');
+if (buttonOrderFilter) {
+    dropMenuOrderFilter = document.querySelector('.filter-order');
+    buttonOrderFilter.addEventListener('click', (e) => {
+        removeAllActive(buttonOrderFilter);
+        buttonOrderFilter.classList.toggle('_active');
+        dropMenuOrderFilter.classList.toggle('_active');
+    })
+}
+
+const buttonTypeFilter = document.querySelector('.button-type');
+if (buttonTypeFilter) {
+    dropMenuTypeFilter = document.querySelector('.filter-type');
+    buttonTypeFilter.addEventListener('click', (e) => {
+        removeAllActive(buttonTypeFilter);
+        buttonTypeFilter.classList.toggle('_active');
+        dropMenuTypeFilter.classList.toggle('_active');
+    })
+}
+
+const buttonPriceFilter = document.querySelector('.button-price');
+if (buttonPriceFilter) {
+    dropMenuPriceFilter = document.querySelector('.filter-price');
+    buttonPriceFilter.addEventListener('click', (e) => {
+        removeAllActive(buttonPriceFilter);
+        buttonPriceFilter.classList.toggle('_active');
+        dropMenuPriceFilter.classList.toggle('_active');
+    })
+}

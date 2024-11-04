@@ -778,7 +778,7 @@ button {
 .categories {
     display: flex;
     flex-direction: column;
-    padding: 10px 200px;
+    padding: 30px 200px;
     gap: 50px;
 }
 
@@ -853,3 +853,106 @@ button {
         gap: 10px;
     }
 }
+
+/* ctalog */
+
+.catalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+/* filter and search */
+
+.filter-and-search {
+    background-color: var(--background-element);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* filter */
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 30px;
+}
+
+.filter-item {
+    font-size: var(--font-size-p);
+    color: var(--text-color-light);
+    transition: all 0.4s ease 0s;
+}
+
+.button-filter {
+    background: none;
+    border: none;
+    position: relative;
+    color: var(--text-color-light);
+    transition: all 0.4s ease 0s;
+}
+
+.button-filter::after {
+    content: "▼";
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+    right: -15px;
+    color: var(--text-color-light);
+    transition: all 0.4s ease 0s;
+}
+
+.button-filter._active::after {
+    transform: rotate(-180deg);
+}
+
+/* search */
+
+.conteiner-search {
+    background-color: var(--background-color);
+    position: relative;
+    width: 420px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.conteiner-search input[type='search'] {
+    width: 100%;
+    height: 100%;
+    padding: 10px 60px 10px 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: var(--font-size-p);
+}
+
+.conteiner-search label {
+    position: absolute;
+    padding: 10px;
+    border-radius: 30px;
+    right: 5px;
+    top: 50%;
+    transform:translateY(-50%);
+    background-color: var(--background-element);
+    cursor: pointer;
+}
+
+.conteiner-search label input[type='submit'] {
+    width: 32px;
+    height: 32px;
+    background-image: url(../icon/search.svg);
+    background-color: var(--background-element);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
