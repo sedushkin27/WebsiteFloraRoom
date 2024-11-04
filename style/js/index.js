@@ -6,21 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         const currentScroll = window.pageYOffset;
         
-        // Показ/скрытие header
         if (currentScroll > lastScroll && currentScroll > 50) {
-            header.style.top = "-100px"; // Скрываем header за пределы экрана
+            header.style.top = "-100px";
         } else {
-            header.style.top = "0"; // Показываем header
+            header.style.top = "0";
         }
         
-        // Изменение фона header
         const targetSection = document.querySelector(".headline");
         const sectionPosition = targetSection.getBoundingClientRect().top;
         
         if (sectionPosition < 0) {
-            header.classList.add("scrolled"); // Добавляем класс для смены фона
+            header.classList.add("scrolled"); 
         } else {
-            header.classList.remove("scrolled"); // Убираем класс, когда до section не дошли
+            header.classList.remove("scrolled"); 
         }
         
         lastScroll = currentScroll;
@@ -100,11 +98,21 @@ if (forgotPasswordLink) {
     })
 }
 
+const buttonFilter = document.querySelector('.button-filter-mobile');
+if (buttonFilter) {
+    dropMenuFilter = document.querySelector('.filter');
+    buttonFilter.addEventListener('click', (e) => {
+        removeAllActive(buttonFilter);
+        buttonFilter.classList.toggle('_active');
+        dropMenuFilter.classList.toggle('_active');
+    })
+}
+
 const buttonOrderFilter = document.querySelector('.button-order');
 if (buttonOrderFilter) {
     dropMenuOrderFilter = document.querySelector('.filter-order');
     buttonOrderFilter.addEventListener('click', (e) => {
-        removeAllActive(buttonOrderFilter);
+        removeAllActive(dropMenuOrderFilter);
         buttonOrderFilter.classList.toggle('_active');
         dropMenuOrderFilter.classList.toggle('_active');
     })
@@ -114,7 +122,7 @@ const buttonTypeFilter = document.querySelector('.button-type');
 if (buttonTypeFilter) {
     dropMenuTypeFilter = document.querySelector('.filter-type');
     buttonTypeFilter.addEventListener('click', (e) => {
-        removeAllActive(buttonTypeFilter);
+        removeAllActive(dropMenuTypeFilter);
         buttonTypeFilter.classList.toggle('_active');
         dropMenuTypeFilter.classList.toggle('_active');
     })
@@ -124,7 +132,7 @@ const buttonPriceFilter = document.querySelector('.button-price');
 if (buttonPriceFilter) {
     dropMenuPriceFilter = document.querySelector('.filter-price');
     buttonPriceFilter.addEventListener('click', (e) => {
-        removeAllActive(buttonPriceFilter);
+        removeAllActive(dropMenuPriceFilter);
         buttonPriceFilter.classList.toggle('_active');
         dropMenuPriceFilter.classList.toggle('_active');
     })

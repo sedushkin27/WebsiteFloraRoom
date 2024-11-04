@@ -38,9 +38,9 @@
                     <!-- button cart, login and registration -->
                     <div class="cart-login-registration">
                         <!-- button to view the cart in header -->
-                        <button type="button" class="button-header img-button cart"><img src="style/icon/cart.png" alt="корзина"></button>
+                        <button type="button" class="button img-button cart"><img src="style/icon/cart.png" alt="корзина"></button>
                         <!-- button to view the login and registration in header -->
-                        <button type="button" class="button-header button-login-header">Вхід/Реєстрація</button>
+                        <button type="button" class="button button-login-header">Вхід/Реєстрація</button>
                     </div>
                 </div>
             </div>
@@ -359,30 +359,41 @@
         </section>
         <section class="catalog">
             <div class="filter-and-search">
+                <button type="button" class="button button-filter-mobile">фільтри</button>
                 <ul class="filter">
                     <li class="filter-item">
                         <button type="button" class="button-filter button-order">порядок</button>
-                        <ul class="filter-dropmenu filter-order">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
+                        <form action="" method="post">
+                            <ul class="filter-dropmenu filter-order">
+                                <li><input type="radio" name="order" id="default" checked><label for="default">За замовчуванням</label></li>
+                                <li><input type="radio" name="order" id="fromAtoZ"><label for="fromAtoZ">Від А до Я</label></li>
+                                <li><input type="radio" name="order" id="fromZtoA"><label for="fromZtoA">Від Я до А</label></li>
+                                <li><input type="radio" name="order" id="asPriceRises"><label for="asPriceRises">За зростанням цени</label></li>
+                                <li><input type="radio" name="order" id="byDescendingPrice"><label for="byDescendingPrice">За спаданням цени</label></li>
+                                <li><input type="submit" class="button button-filter-dropmenu" value="Відправити"></li>
+                            </ul>
+                        </form>
                     </li>
                     <li class="filter-item">
                         <button type="button" class="button-filter button-type">вид</button>
-                        <ul class="filter-dropmenu filter-type">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
+                        <form action="">
+                            <ul class="filter-dropmenu filter-type">
+                                <li><input type="checkbox" name="flower-1" id="flower-1"><label for="flower-1">вид цветока 1</label></li>
+                                <li><input type="checkbox" name="flower-2" id="flower-2"><label for="flower-2">вид цветока 2</label></li>
+                                <li><input type="checkbox" name="flower-3" id="flower-3"><label for="flower-3">вид цветока 3</label></li>
+                                <li><input type="submit" class="button button-filter-dropmenu" value="Відправити"></li>
+                            </ul>
+                        </form>
                     </li>
                     <li class="filter-item">
                         <button type="button" class="button-filter button-price">ціна</button>
-                        <ul class="filter-dropmenu filter-price">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
+                        <form action="" method="post" class="filter-dropmenu filter-price">
+                            <p class="by">Від:</p>
+                            <input type="number">
+                            <p class="through">До:</p>
+                            <input type="number">
+                            <input type="submit" class="button button-filter-dropmenu" value="Відправити">
+                        </form>
                     </li>
                     <li class="filter-item">
                         <input type="checkbox" name="presence" id="presence">
@@ -399,6 +410,9 @@
                         <input type="submit" id="submit-search" value="">
                     </label>
                 </form>
+            </div>
+            <div class="conteiner-products">
+
             </div>
         </section>
         <section>
