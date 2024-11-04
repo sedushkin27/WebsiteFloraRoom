@@ -1,4 +1,32 @@
 
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        
+        // Показ/скрытие header
+        if (currentScroll > lastScroll && currentScroll > 50) {
+            header.style.top = "-100px"; // Скрываем header за пределы экрана
+        } else {
+            header.style.top = "0"; // Показываем header
+        }
+        
+        // Изменение фона header
+        const targetSection = document.querySelector(".headline");
+        const sectionPosition = targetSection.getBoundingClientRect().top;
+        
+        if (sectionPosition < 0) {
+            header.classList.add("scrolled"); // Добавляем класс для смены фона
+        } else {
+            header.classList.remove("scrolled"); // Убираем класс, когда до section не дошли
+        }
+        
+        lastScroll = currentScroll;
+    });
+});
+
 const removeAllActive = (element) => {
     if (!element.classList.contains('_active')) {
         const allActive = document.querySelectorAll('._active');
