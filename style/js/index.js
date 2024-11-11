@@ -1,4 +1,30 @@
 
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > lastScroll && currentScroll > 50) {
+            header.style.top = "-100px";
+        } else {
+            header.style.top = "0";
+        }
+        
+        const targetSection = document.querySelector(".headline");
+        const sectionPosition = targetSection.getBoundingClientRect().top;
+        
+        if (sectionPosition < 0) {
+            header.classList.add("scrolled"); 
+        } else {
+            header.classList.remove("scrolled"); 
+        }
+        
+        lastScroll = currentScroll;
+    });
+});
+
 const removeAllActive = (element) => {
     if (!element.classList.contains('_active')) {
         const allActive = document.querySelectorAll('._active');
@@ -69,5 +95,45 @@ if (forgotPasswordLink) {
         removeAllActive(forgotPasswordForm);
         forgotPasswordForm.classList.toggle('_active');
         e.preventDefault();
+    })
+}
+
+const buttonFilter = document.querySelector('.button-filter-mobile');
+if (buttonFilter) {
+    dropMenuFilter = document.querySelector('.filter');
+    buttonFilter.addEventListener('click', (e) => {
+        removeAllActive(buttonFilter);
+        buttonFilter.classList.toggle('_active');
+        dropMenuFilter.classList.toggle('_active');
+    })
+}
+
+const buttonOrderFilter = document.querySelector('.button-order');
+if (buttonOrderFilter) {
+    dropMenuOrderFilter = document.querySelector('.filter-order');
+    buttonOrderFilter.addEventListener('click', (e) => {
+        removeAllActive(dropMenuOrderFilter);
+        buttonOrderFilter.classList.toggle('_active');
+        dropMenuOrderFilter.classList.toggle('_active');
+    })
+}
+
+const buttonTypeFilter = document.querySelector('.button-type');
+if (buttonTypeFilter) {
+    dropMenuTypeFilter = document.querySelector('.filter-type');
+    buttonTypeFilter.addEventListener('click', (e) => {
+        removeAllActive(dropMenuTypeFilter);
+        buttonTypeFilter.classList.toggle('_active');
+        dropMenuTypeFilter.classList.toggle('_active');
+    })
+}
+
+const buttonPriceFilter = document.querySelector('.button-price');
+if (buttonPriceFilter) {
+    dropMenuPriceFilter = document.querySelector('.filter-price');
+    buttonPriceFilter.addEventListener('click', (e) => {
+        removeAllActive(dropMenuPriceFilter);
+        buttonPriceFilter.classList.toggle('_active');
+        dropMenuPriceFilter.classList.toggle('_active');
     })
 }
