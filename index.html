@@ -29,9 +29,9 @@
                     <!-- navigation -->
                     <nav class="navigation">
                         <ul class="navigation-list">
-                            <li><a href="#" class="navigation-item">Каталог</a></li>
-                            <li><a href="#" class="navigation-item">Про нас</a></li>
-                            <li><a href="#" class="navigation-item">Контакти</a></li>
+                            <li><a href="#information" class="navigation-item">Про нас</a></li>
+                            <li><a href="#categories" class="navigation-item">Асортимент</a></li>
+                            <li><a href="#catalog" class="navigation-item">Каталог</a></li>
                         </ul>
                     </nav>
 
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="conteiner-form">
+        <div class="container-form">
             <!-- The form of a header basket -->
             <form action="" method="post" class="cart-form-in-header">
                 <h1>Кошик</h1>
@@ -225,17 +225,17 @@
     </header>
     <main class="main">
         <section class="headline">
-            <div class="conteiner-headline">
-                <div class="conteiner-headline-title">
+            <div class="container-headline">
+                <div class="container-headline-title">
                     <h1 class="light-title-text">Flora</h1>
                     <h1 class="dark-title-text">Room</h1>
                 </div>
-                <div class="conteiner-headline-title">
+                <div class="container-headline-title">
                     <h1 class="dark-title-text">Flora</h1>
                     <h1 class="light-title-text">Room</h1>
                 </div>
                 <p class="container-headline-text">Кімнатні та садові рослини. Великий вибір для вашого дому та саду. Гарантія якості та свіжості за найкращими цінами!</p>
-                <button type="button" class="button-headline">каталог</button>
+                <a href="#catalog" class="button-headline">Каталог</a>
             </div>
         </section>
         <section class="about-us">
@@ -252,15 +252,15 @@
                 <div class="grid-item"><img src="style/user/user_image_product/flowers.jpg" alt="зображення"></div>
                 <div class="grid-item"><img src="style/user/user_image_product/flowers.jpg" alt="зображення"></div>
             </div>
-            <div class="information">
+            <div class="information" id="information">
                 <div class="about-us-contact">
                     <div class="section-title">
                         <h1 >Контакти</h1>
                     </div>
-                    <div class="conteiner-contact">
+                    <div class="container-contact">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d276205.91987536993!2d30.22807020795248!3d50.4297920430433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e1!3m2!1sru!2sua!4v1730135552761!5m2!1sru!2sua" 
                         class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="conteiner-contact-items">
+                        <div class="container-contact-items">
                             <div class="contact-item">
                                 <img src="https://img.icons8.com/windows/64/FFFFFF/instagram-new.png" alt="instagram"/>
                                 <p>instagrom</p>
@@ -288,21 +288,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-us-conteiner-text">
+                <div class="about-us-container-text">
                     <div class="section-title">
                         <h1>Про нас</h1>
                     </div>
-                    <div class="conteiner-text">
+                    <div class="container-text">
                         <p>У FloraRoom ми створюємо природну атмосферу в кожному куточку вашого будинку і офісу. 
                             Наш асортимент охоплює всі види декоративних рослин - від ніжних кольорів і екзотичних 
                             чагарників до величних дерев, які оживлять будь-який інтер'єр.</p>
                     </div>
-                    <div class="conteiner-text">
+                    <div class="container-text">
                         <p>Ми вважаємо, що рослини - це не просто прикраса, а джерело натхнення, 
                             енергії та гармонії. Кожна рослина в нашому магазині підбирається з особливою увагою 
                             і турботою, щоб радувати вас не тільки зовнішнім виглядом, але і відмінною якістю.</p>
                     </div>
-                    <div class="conteiner-text">
+                    <div class="container-text">
                         <p>Будь то зелений простір для вашої робочої зони або унікальна рослина для особливого 
                             подарунка, FloraRoom допоможе вам зробити правильний вибір і створить комфорт і затишок 
                             у вашому просторі.</p>
@@ -310,9 +310,9 @@
                 </div>
             </div>
         </section>
-        <section class="categories">
+        <section class="categories" id="categories">
             <div class="section-title"><h1>Наш асортимент</h1></div>
-            <div class="conteiner-categories">
+            <div class="container-categories">
                 <div class="category">
                     <img class="category-image" src="style/user/user_image_product/flowers.jpg" alt="">
                     <div class="category-title-and-button">
@@ -357,7 +357,7 @@
                 </div>
             </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <div class="filter-and-search">
                 <button type="button" class="button button-filter-mobile">фільтри</button>
                 <ul class="filter">
@@ -404,30 +404,31 @@
                         <label for="discount">скідкі</label>
                     </li>
                 </ul>
-                <form class="conteiner-search" action="">
+                <form class="container-search" action="">
                     <input type="search" name="search" id="search" placeholder="пошук">
                     <label for="submit-search">
                         <input type="submit" id="submit-search" value="">
                     </label>
                 </form>
             </div>
-            <div class="conteiner-products">
+            <div class="container-products">
                 <div class="products">
                     <div class="product">
                         <a href="" class="product-link-image"><img src="style/user/user_image_product/flowers.jpg" alt="" class="image-product"></a>
+                        <div class="container-discount"><h1>Скидка 50%</h1></div>
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
-                                    <p class="price-product"><b>250 грн.</b></p>
+                                    <p class="price-product"><b>125 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -438,16 +439,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -458,16 +459,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -478,16 +479,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -498,16 +499,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -518,16 +519,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -538,16 +539,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -558,16 +559,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
@@ -578,16 +579,16 @@
                         <div class="info-product">
                             <h1 class="title-product">Юкка Bright Edge, горщик 12 см , фото на відправку останні</h1>
                             <p class="description-product">Ширина -40см, висота -40 см, місце посадки повне сонце, зона зимостійкості -5</p>
-                            <div class="conteiner-price">
+                            <div class="container-price">
                                 <!-- No-discount price -->
                                 <p class="price-product"><b>250 грн.</b></p>
                                 <!-- discount price -->
-                                <div class="discount-product">
+                                <div class="price-with-discount-product">
                                     <p class="price-product"><del>250 грн.</del></p>
                                     <p class="price-product"><b>250 грн.</b></p>
                                 </div>
                             </div>
-                            <div class="conteiner-button-product">
+                            <div class="container-button-product">
                                 <a href="" class="button product-details">Детальніше</a>
                                 <button type="button" class="button product-add-cart" >У корзину</button>
                             </div>
