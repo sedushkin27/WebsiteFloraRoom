@@ -3,47 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="stylesheet" href="style/css/style_product.css">
+    <link rel="stylesheet" href="style/css/style_profile.css">
 </head>
 <body>
     <main>
         <section class="container-close">
             <a href="index.html" class="button-close"><img src="style/icon/close.svg" alt="close"></a>
         </section>
-        <section class="container-product">
-            <div class="information">
-                <div class="gallery-container">
-                    <img id="mainImage" class="main-image" src="style/user/user_image_product/flower.jpg" alt="Main Image">
-                    <div class="thumbnail-container">
-                        <img src="style/user/user_image_product/flower.jpg" class="thumbnail" alt="Thumbnail 1">
-                        <img src="style/image/image_2.jpg" class="thumbnail" alt="Thumbnail 2">
-                        <img src="style/user/user_image_product/flower_2.jpg" class="thumbnail" alt="Thumbnail 3">
-                        <img src="style/user/user_image_product/flowers.jpg" class="thumbnail" alt="Thumbnail 4">
-                        <img src="style/user/user_image_product/flower.jpg" class="thumbnail" alt="Thumbnail 1">
-                        <img src="style/image/image_2.jpg" class="thumbnail" alt="Thumbnail 2">
-                        <img src="style/user/user_image_product/flower_2.jpg" class="thumbnail" alt="Thumbnail 3">
-                        <img src="style/user/user_image_product/flowers.jpg" class="thumbnail" alt="Thumbnail 4">
+        <section class="container-profile">
+            <div class="section-title section-title-profile"><h1>Профіль</h1></div>
+            <div class="container-information-in-profile">
+                <form action="" method="" class="container-information-user">
+                    <div class="input-form-in-header"> 
+                        <input type="text" name="first_name" id="first_name" class="input-form-in-header-input" placeholder="" required>
+                        <label for="username_login" class="input-form-in-header-label">Ім'я</label>
                     </div>
-                </div>
-                <div class="information-product">
-                    <h1 class="title-product-in-information">Гейхера Northern Exposure Black, касетна розсада,фото на відправку останнє, нумерація сорту -4</h1>
-                    <div class="container-price">
-                        <!-- No-discount price -->
-                        <!-- <p class="price-product"><b>250 грн.</b></p> -->
-                        <!-- discount price -->
-                        <div class="price-with-discount-product">
-                            <p class="price-product"><del>250 грн.</del></p>
-                            <p class="price-product"><b>250 грн.</b></p>
-                        </div>
+                    <div class="input-form-in-header"> 
+                        <input type="text" name="last_name" id="last_name" class="input-form-in-header-input" placeholder="" required>
+                        <label for="username_login" class="input-form-in-header-label">Прізвище</label>
                     </div>
-                    <button type="button" class="button-buy">Придбати</button>
-                    <p class="description-in-information">Висота 20 см, ширина 50 см в дорослому віці, місце посадки напівтінь , тінь, зона зимостійкості 5. Гейхера може мати різні відтінки в залежності від місця посадки і пори року</p>
-                </div>
+                    <div class="input-form-in-header"> 
+                        <input type="text" name="username" id="username_registration" class="input-form-in-header-input" placeholder="" required>
+                        <label for="username_login" class="input-form-in-header-label">Ім'я користувача</label>
+                    </div>
+                    <div class="input-form-in-header"> 
+                        <input type="tel" name="phone" id="phone_registration" class="input-form-in-header-input" placeholder="" required>
+                        <label for="username_login" class="input-form-in-header-label">Номер телефону</label>
+                    </div>
+                    <div class="input-form-in-header"> 
+                        <input type="email" name="email" id="email_registration" class="input-form-in-header-input" placeholder="" required>
+                        <label for="username_login" class="input-form-in-header-label">Електрична пошта</label>
+                    </div>
+                    <input type="submit" id="" name="" class="button button-profile" value="Зберегти">
+                    <button type="button" class="button button-profile">Змінити пароль</button>
+                    <a href="" class="button button-profile">Історія покупок</a>
+                </form>
+                <form action="" method="post" class="cart-form-in-profile">
+                    <h1>Кошик</h1>
+                    <ul class="items-cart">
+                        <li class="item-cart">
+                            <a href=""><img class="image-item-cart" src="style/user/user_image_product/flowers.jpg" alt="зображення"></a>
+                            <div class="product-information">
+                                <a href=""><p class="title-product-cart">Назва продукту</p></a>
+                                <!-- No-discount price -->
+                                <!-- <p class="price-product-cart">Вартість: 20.1</p> -->
+                                <!-- discount price -->
+                                <del><p class="price-product-cart">Вартість: 20.1</p></del>
+                                <p class="price-product-cart">Вартість з знижкою : 20.1</p>
+                                <div class="count-add-remove-product">
+                                    <p class="count-product">Кількість: 1</p>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/add_product_in_cart_form.png" alt="+"></dutton>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/remove_product_in_cart_form.png" alt="-"></dutton>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-cart">
+                            <a href=""><img class="image-item-cart" src="style/user/user_image_product/flowers.jpg" alt="зображення"></a>
+                            <div class="product-information">
+                                <a href=""><p class="title-product-cart">Назва продукту</p></a>
+                                <!-- No-discount price -->
+                                <!-- <p class="price-product-cart">Вартість: 20.1</p> -->
+                                <!-- discount price -->
+                                <del><p class="price-product-cart">Вартість: 20.1</p></del>
+                                <p class="price-product-cart">Вартість з знижкою : 20.1</p>
+                                <div class="count-add-remove-product">
+                                    <p class="count-product">Кількість: 1</p>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/add_product_in_cart_form.png" alt="+"></dutton>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/remove_product_in_cart_form.png" alt="-"></dutton>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-cart">
+                            <a href=""><img class="image-item-cart" src="style/user/user_image_product/flowers.jpg" alt="зображення"></a>
+                            <div class="product-information">
+                                <a href=""><p class="title-product-cart">Назва продукту</p></a>
+                                <!-- No-discount price -->
+                                <!-- <p class="price-product-cart">Вартість: 20.1</p> -->
+                                <!-- discount price -->
+                                <del><p class="price-product-cart">Вартість: 20.1</p></del>
+                                <p class="price-product-cart">Вартість з знижкою : 20.1</p>
+                                <div class="count-add-remove-product">
+                                    <p class="count-product">Кількість: 1</p>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/add_product_in_cart_form.png" alt="+"></dutton>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/remove_product_in_cart_form.png" alt="-"></dutton>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-cart">
+                            <a href=""><img class="image-item-cart" src="style/user/user_image_product/flowers.jpg" alt="зображення"></a>
+                            <div class="product-information">
+                                <a href=""><p class="title-product-cart">Назва продукту</p></a>
+                                <!-- No-discount price -->
+                                <!-- <p class="price-product-cart">Вартість: 20.1</p> -->
+                                <!-- discount price -->
+                                <del><p class="price-product-cart">Вартість: 20.1</p></del>
+                                <p class="price-product-cart">Вартість з знижкою : 20.1</p>
+                                <div class="count-add-remove-product">
+                                    <p class="count-product">Кількість: 1</p>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/add_product_in_cart_form.png" alt="+"></dutton>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/remove_product_in_cart_form.png" alt="-"></dutton>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-cart">
+                            <a href=""><img class="image-item-cart" src="style/user/user_image_product/flowers.jpg" alt="зображення"></a>
+                            <div class="product-information">
+                                <a href=""><p class="title-product-cart">Назва продукту</p></a>
+                                <!-- No-discount price -->
+                                <!-- <p class="price-product-cart">Вартість: 20.1</p> -->
+                                <!-- discount price -->
+                                <del><p class="price-product-cart">Вартість: 20.1</p></del>
+                                <p class="price-product-cart">Вартість з знижкою : 20.1</p>
+                                <div class="count-add-remove-product">
+                                    <p class="count-product">Кількість: 1</p>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/add_product_in_cart_form.png" alt="+"></dutton>
+                                    <dutton type="button" class="button-product-in-cart"><img src="style/icon/remove_product_in_cart_form.png" alt="-"></dutton>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="input-submit-form-in-header">Оформити замовлення</button>
+                </form>
             </div>
         </section>
         <section class="your-views">
@@ -254,9 +340,6 @@
                 <button class="button-slider button-back-slider">&#9664;</button>
                 <button class="button-slider button-forward-slider">&#9654;</button>
             </div>
-        </section>
-        <section id="imageModal" class="modal">
-            <img id="modalImage" src="" alt="Modal Image">
         </section>
     </main>
     <script src="style/js/product_profile.js"></script>
